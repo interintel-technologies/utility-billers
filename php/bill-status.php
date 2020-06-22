@@ -22,11 +22,11 @@ function bill_status($account_number,$transid="", $schedule=""){
         $payload = security($payload, API_KEY);
         print_r($payload);
         print "|||||||||||||||||||||||||||||||||";
-        return request($payload, 'BILL PAYMENT');
+        return request($payload, 'BILL STATUS');
 }
 
 
-//*************************BILL PAYMENT*****************************
+//*************************BILL STATUS*****************************
 //TRANSACTION_ID|SCHEDULED_SEND are optional
 
 $result = bill_status("ACCOUNT-XXX","REF NUMBER","");
