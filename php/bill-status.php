@@ -7,7 +7,7 @@ define("USERNAME","<<USERNAME>>");
 define("PASSWORD","<<PASSWORD>>");
 
 
-function bill_status($account_number,$transid=""){
+function bill_status($account_number, $product_item, $transid=""){
         $payload = init_payload();
         $credentials = array();
         $credentials['username'] = USERNAME;
@@ -15,7 +15,7 @@ function bill_status($account_number,$transid=""){
         $payload["gateway_host"] = 'interintel.co';
         $payload["credentials"] = $credentials;
         $payload["account_number"] = $account_number;
-        $payload["product_item_id"] = XXXXX; //Product ID  ***TO BE PROVIDED***
+        $payload["product_item_id"] = $product_item; //Product ID  ***TO BE PROVIDED***
         $payload["ext_outbound_id"] = $transid;
         print_r($payload);
         print "|||||||||||||||||||||||||||||||||";
@@ -29,7 +29,7 @@ function bill_status($account_number,$transid=""){
 //*************************BILL STATUS*****************************
 //TRANSACTION_ID is optional
 
-$result = bill_status("ACCOUNT-XXX","REF NUMBER");
+$result = bill_status("ACCOUNT-XXX", "PRODUCT_ID", "REF NUMBER");
 
 $payload = (array) json_decode($result);
 print_r($payload);
