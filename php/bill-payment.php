@@ -23,7 +23,7 @@ function bill_payment($account_number,$amount,$transid="", $schedule=""){
         $payload = security($payload, API_KEY);
         print_r($payload);
         print "|||||||||||||||||||||||||||||||||";
-        return request($payload, 'BILL PAYMENT');
+        return request($payload, 'bill-payment');
 }
 
 

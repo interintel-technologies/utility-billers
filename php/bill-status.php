@@ -6,6 +6,7 @@ define("API_KEY","<<API_KEY>>");
 define("USERNAME","<<USERNAME>>");
 define("PASSWORD","<<PASSWORD>>");
 
+
 function bill_status($account_number,$transid="", $schedule=""){
         $payload = init_payload();
         $credentials = array();
@@ -22,7 +23,7 @@ function bill_status($account_number,$transid="", $schedule=""){
         $payload = security($payload, API_KEY);
         print_r($payload);
         print "|||||||||||||||||||||||||||||||||";
-        return request($payload, 'BILL STATUS');
+        return request($payload, 'bill-status');
 }
 
 
