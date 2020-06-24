@@ -7,7 +7,7 @@ define("USERNAME","<<USERNAME>>");
 define("PASSWORD","<<PASSWORD>>");
 
 
-function biller_float($transid="", $schedule=""){
+function biller_float($transid=""){
         $payload = init_payload();
         $credentials = array();
         $credentials['username'] = USERNAME;
@@ -16,7 +16,6 @@ function biller_float($transid="", $schedule=""){
         $payload["credentials"] = $credentials;
         $payload["product_item_id"] = XXXXX; //Product ID  ***TO BE PROVIDED***
         $payload["ext_outbound_id"] = $transid;
-        $payload["scheduled_send"] = $schedule; // d/m/Y H:M (am/pm)
         print_r($payload);
         print "|||||||||||||||||||||||||||||||||";
         $payload = security($payload, API_KEY);
@@ -27,9 +26,9 @@ function biller_float($transid="", $schedule=""){
 
 
 //*************************BILL STATUS*****************************
-//TRANSACTION_ID|SCHEDULED_SEND are optional
+//TRANSACTION_ID is optional
 
-$result = biller_float("REF NUMBER","");
+$result = biller_float("REF NUMBER");
 
 $payload = (array) json_decode($result);
 print_r($payload);

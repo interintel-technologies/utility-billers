@@ -7,7 +7,7 @@ define("USERNAME","<<USERNAME>>");
 define("PASSWORD","<<PASSWORD>>");
 
 
-function bill_status($account_number,$transid="", $schedule=""){
+function bill_status($account_number,$transid=""){
         $payload = init_payload();
         $credentials = array();
         $credentials['username'] = USERNAME;
@@ -17,7 +17,6 @@ function bill_status($account_number,$transid="", $schedule=""){
         $payload["account_number"] = $account_number;
         $payload["product_item_id"] = XXXXX; //Product ID  ***TO BE PROVIDED***
         $payload["ext_outbound_id"] = $transid;
-        $payload["scheduled_send"] = $schedule; // d/m/Y H:M (am/pm)
         print_r($payload);
         print "|||||||||||||||||||||||||||||||||";
         $payload = security($payload, API_KEY);
@@ -28,9 +27,9 @@ function bill_status($account_number,$transid="", $schedule=""){
 
 
 //*************************BILL STATUS*****************************
-//TRANSACTION_ID|SCHEDULED_SEND are optional
+//TRANSACTION_ID is optional
 
-$result = bill_status("ACCOUNT-XXX","REF NUMBER","");
+$result = bill_status("ACCOUNT-XXX","REF NUMBER");
 
 $payload = (array) json_decode($result);
 print_r($payload);
