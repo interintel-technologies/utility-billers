@@ -61,6 +61,7 @@ base64 decoded *API key* is the shared secret key used for generating the HMAC v
 ## endpoints
 > please note that it must end in a slash
 
+### /api/biller-float/
 ### /api/bill-status/
 ### /api/bill-payment/
 
