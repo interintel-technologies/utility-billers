@@ -11,11 +11,11 @@
 
 Base URL
 
-Production:[https://interintel.co/api/{{service}}](https://interintel.co/api/%7B%7Bservice%7D%7D)
+Production:[https://interintel.co/api/v1/{{service}}](https://interintel.co/api/v1/%7B%7Bservice%7D%7D)
 
 **Authentication**
 
-OAUTH 2.0 has been implemented for this API hence the developer needs to get the OAUTH 2.0 login details (client\_id, username and authorization\_grant\_type) from the Nenasasa portal under Developer-\>Settings section. You will also need to use your existing password
+OAUTH 2.0 has been implemented for this API hence the developer needs to get the OAUTH 2.0 login details (client\_id, username and authorization\_grant\_type) from the InterIntel portal under Developer-\>Settings section. You will also need to use your existing password
 
 **Rate Limiting**
 
@@ -58,7 +58,7 @@ Sample Request Body:
 
 {
 
-"client\_id" : "harhfurhaeufhrehfuherf===",
+"client\_id" : "xxxxxxxx",
 
 "username" : "company1",
 
@@ -395,6 +395,7 @@ Dependencies
 
 1. Institution has to be created on the backend
 2. Float top up to account
+3. Issuing of product item ids
 
 Known Issues
 
