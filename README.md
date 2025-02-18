@@ -208,13 +208,11 @@ Request Parameters
 
 | ID | Name | Type | Description | Required |
 | --- | --- | --- | --- | --- |
-| 1 | gateway\_host | String | Defines the gateway host | Yes |
-| 2 | credentials | Array | Array of username and password | Yes |
-| 3 | account\_number | String | Unique Account No | Yes |
-| 4 | amount | String | Amount to be paid | Yes |
-| 5 | product\_item\_id | String | Product Item ID, this provided | Yes |
-| 6 | ext\_outbound\_id | String | Transaction ID | No |
-| 7 | scheduled\_send | Date Time | d/m/Y H:M (am/pm) | No |
+| 1 | account\_number | String | Unique Account No | Yes |
+| 2 | amount | String | Amount to be paid | Yes |
+| 3 | product\_item\_id | String | Product Item ID, this provided | Yes |
+| 4 | ext\_outbound\_id | String | Transaction ID | No |
+| 5 | scheduled\_send | Date Time | d/m/Y H:M (am/pm) | No |
 
 Response Headers
 
@@ -256,13 +254,11 @@ Request Parameters
 
 | ID | Name | Type | Description | Required |
 | --- | --- | --- | --- | --- |
-| 1 | gateway\_host | String | Defines the gateway host | Yes |
-| 2 | credentials | Array | Array of username and password | Yes |
-| 3 | account\_number | String | Unique Account No | Yes |
-| 4 | amount | String | Amount to be paid | Yes |
-| 5 | product\_item\_id | String | Product Item ID, this provided | Yes |
-| 6 | ext\_outbound\_id | String | Transaction ID | No |
-| 7 | scheduled\_send | Date Time | d/m/Y H:M (am/pm) | No |
+| 1 | account\_number | String | Unique Account No | Yes |
+| 2 | amount | String | Amount to be paid | Yes |
+| 3 | product\_item\_id | String | Product Item ID, this provided | Yes |
+| 4 | ext\_outbound\_id | String | Transaction ID | No |
+| 5 | scheduled\_send | Date Time | d/m/Y H:M (am/pm) | No |
 
 Response Headers
 
@@ -304,13 +300,11 @@ Request Parameters
 
 | ID | Name | Type | Description | Required |
 | --- | --- | --- | --- | --- |
-| 1 | gateway\_host | String | Defines the gateway host | Yes |
-| 2 | credentials | Array | Array of username and password | Yes |
-| 3 | account\_number | String | Unique Account No | Yes |
-| 4 | amount | String | Amount to be paid | Yes |
-| 5 | product\_item\_id | String | Product Item ID, this provided | Yes |
-| 6 | ext\_outbound\_id | String | Transaction ID | No |
-| 7 | scheduled\_send | Date Time | d/m/Y H:M (am/pm) | No |
+| 1 | account\_number | String | Unique Account No | Yes |
+| 2 | amount | String | Amount to be paid | Yes |
+| 3 | product\_item\_id | String | Product Item ID, this provided | Yes |
+| 4 | ext\_outbound\_id | String | Transaction ID | No |
+| 5 | scheduled\_send | Date Time | d/m/Y H:M (am/pm) | No |
 
 Response Headers
 
@@ -352,13 +346,11 @@ Request Parameters
 
 | ID | Name | Type | Description | Required |
 | --- | --- | --- | --- | --- |
-| 1 | gateway\_host | String | Defines the gateway host | Yes |
-| 2 | credentials | Array | Array of username and password | Yes |
-| 3 | account\_number | String | Unique Account No | Yes |
-| 4 | amount | String | Amount to be paid | Yes |
-| 5 | product\_item\_id | String | Product Item ID, this provided | Yes |
-| 6 | ext\_outbound\_id | String | Transaction ID | No |
-| 7 | scheduled\_send | Date Time | d/m/Y H:M (am/pm) | No |
+| 1 | account\_number | String | Unique Account No | Yes |
+| 2 | amount | String | Amount to be paid | Yes |
+| 3 | product\_item\_id | String | Product Item ID, this provided | Yes |
+| 4 | ext\_outbound\_id | String | Transaction ID | No |
+| 5 | scheduled\_send | Date Time | d/m/Y H:M (am/pm) | No |
 
 Response Headers
 
