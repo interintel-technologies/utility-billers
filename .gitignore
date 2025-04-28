@@ -1,2 +1,2 @@
-# Ignore the specific file
-php/bill-payment.test.php
+# Ignore all files with the .test.php extension in the php folder
+php/*.test.php
